@@ -2,7 +2,7 @@
 
 **Summary**
 
-This project's goal is to solve puzzle cube with the side length 4. _cube.py_ and _random.py_ are prototypes for the presented C++ implementation. _cube.py_ searches the densest possible combination in each iteration. The algorithm performed ~20x better in testing than randomly placing parts into the cube.
+This project attempts to solve a puzzle cube with side length 4. All algorithms can be applied to various sizes and might be helpful further bin sort implementation. _cube.py_ and _random.py_ are prototypes for the presented C++ implementation. _cube.py_ searches the densest possible combination in each iteration. The algorithm performed ~20x better in testing than randomly placing parts into the cube.
 
 **Execution**
 
