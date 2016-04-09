@@ -319,23 +319,29 @@ def loop(parts, brain, placed):
         else:
             break
 
-# init parts
-parts = []
+# # init parts
+# parts = []
+# for part_no in range(len(parts_raw)):
+#     part = parts_raw[part_no]
+#     part = binary_to_vector(part)
+#     part = vector_to_binary(part)
+#     parts.append([combinations(part), part_no])
+#
+# #starting part
+# while True:
+#     for part_no in range(len(parts)):
+#         for cmb_no in range(len(parts[part_no][0])):
+#             # reset variables
+#             brain = create()
+#             placed = []
+#             parts_cpy = parts[:]
+#             # add part to brain
+#             brain = add_part(brain, parts_cpy[part_no][0][cmb_no][0], parts_cpy[part_no][1]+1)
+#             placed.append(part_no)
+#             loop(parts_cpy, brain, placed)
+
+
 for part_no in range(len(parts_raw)):
     part = parts_raw[part_no]
     part = binary_to_vector(part)
-    part = vector_to_binary(part)
-    parts.append([combinations(part), part_no])
-
-#starting part
-while True:
-    for part_no in range(len(parts)):
-        for cmb_no in range(len(parts[part_no][0])):
-            # reset variables
-            brain = create()
-            placed = []
-            parts_cpy = parts[:]
-            # add part to brain
-            brain = add_part(brain, parts_cpy[part_no][0][cmb_no][0], parts_cpy[part_no][1]+1)
-            placed.append(part_no)
-            loop(parts_cpy, brain, placed)
+    print(part)
